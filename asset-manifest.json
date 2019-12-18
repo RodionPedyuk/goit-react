@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/RodionPedyuk/goit-react/static/css/main.ef153489.chunk.css",
+    "main.js": "/RodionPedyuk/goit-react/static/js/main.a523d8ca.chunk.js",
+    "main.js.map": "/RodionPedyuk/goit-react/static/js/main.a523d8ca.chunk.js.map",
+    "runtime-main.js": "/RodionPedyuk/goit-react/static/js/runtime-main.a156b9f0.js",
+    "runtime-main.js.map": "/RodionPedyuk/goit-react/static/js/runtime-main.a156b9f0.js.map",
+    "static/js/2.11e758ed.chunk.js": "/RodionPedyuk/goit-react/static/js/2.11e758ed.chunk.js",
+    "static/js/2.11e758ed.chunk.js.map": "/RodionPedyuk/goit-react/static/js/2.11e758ed.chunk.js.map",
+    "index.html": "/RodionPedyuk/goit-react/index.html",
+    "precache-manifest.df358698dc8a21d643742dc3e21dcbff.js": "/RodionPedyuk/goit-react/precache-manifest.df358698dc8a21d643742dc3e21dcbff.js",
+    "service-worker.js": "/RodionPedyuk/goit-react/service-worker.js",
+    "static/css/main.ef153489.chunk.css.map": "/RodionPedyuk/goit-react/static/css/main.ef153489.chunk.css.map",
+    "static/js/2.11e758ed.chunk.js.LICENSE": "/RodionPedyuk/goit-react/static/js/2.11e758ed.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a156b9f0.js",
+    "static/js/2.11e758ed.chunk.js",
+    "static/css/main.ef153489.chunk.css",
+    "static/js/main.a523d8ca.chunk.js"
+  ]
+}
