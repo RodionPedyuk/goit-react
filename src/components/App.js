@@ -1,8 +1,13 @@
 import React from "react";
 import "./App.css";
+import Profile from "./profile/Profile";
 
-function App() {
-  return <div className="App"></div>;
+function App({ user }) {
+  return (
+    <div>
+      <Profile user={user} />
+    </div>
+  );
 }
 
 export default App;

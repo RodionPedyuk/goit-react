@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./components/App";
+import user from "./user.json";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+import App from "./components/App";
+ReactDOM.render(<App user={user} />, document.getElementById("root"));
