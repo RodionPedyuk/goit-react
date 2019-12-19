@@ -1,5 +1,6 @@
-import React from "react";
-import css from "../profile/Profile.module.css";
+import React from 'react';
+import css from '../profile/Profile.module.css';
+import PropTypes from 'prop-types';
 
 const Profile = ({ user }) => {
   return (
@@ -30,3 +31,22 @@ const Profile = ({ user }) => {
 };
 
 export default Profile;
+
+Profile.propTypes = {
+  avatar: PropTypes.string,
+  name: PropTypes.string.isRequired,
+  tag: PropTypes.string,
+  location: PropTypes.string,
+  likes: PropTypes.string,
+  followers: PropTypes.string,
+  views: PropTypes.string,
+};
+Profile.defaultProps = {
+  avatar: '',
+  name: '',
+  tag: '',
+  location: '',
+  likes: '',
+  followers: '',
+  views: '',
+};

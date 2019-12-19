@@ -3,7 +3,6 @@ body {
 }
 .profile {
   width: 250px;
-  height: 330px;
   background-color: #fff;
   text-align: center;
 }
@@ -16,7 +15,7 @@ body {
 .stats {
   list-style: none;
   display: flex;
-  padding: 0px;
+  padding: 10px;
   padding-left: 45px;
 }
 
