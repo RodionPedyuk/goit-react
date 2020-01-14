@@ -1,18 +1,16 @@
 import React from 'react';
 import './App.css';
-import Profile from './profile/Profile';
-import Statistics from './statistics/Statistics';
-import Friends from './FriendList/FriendList';
-import Transactions from './TransactionHistory/TransactionHistoryList';
+import publications from '../publications.json';
+import Feedback from './feedback/Feedback';
+import Reader from './reader/Reader';
+import Phonebook from './phonebook/phonebook';
 
-function App({ user, statistical, friends, transaction }) {
-  console.log('----->', transaction);
+function App() {
   return (
     <div>
-      <Profile user={user} />
-      <Statistics statisticals={statistical} />
-      <Friends friends={friends} />
-      <Transactions transactions={transaction} />
+      <Feedback />
+      <Reader publications={publications} />
+      <Phonebook />
     </div>
   );
 }
