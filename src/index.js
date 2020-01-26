@@ -1,6 +1,13 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import user from "./user.json";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import { store } from './store';
 
-import App from "./components/App";
-ReactDOM.render(<App user={user} />, document.getElementById("root"));
+import App from './components/App.js';
+
+ReactDOM.render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById('root'),
+);
