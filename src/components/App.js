@@ -1,13 +1,14 @@
-import React from "react";
-import "./App.css";
-import Profile from "./profile/Profile";
+import React, { Component } from 'react';
 
-function App({ user }) {
-  return (
-    <div>
-      <Profile user={user} />
-    </div>
-  );
+import Gallery from './Gallery/Gallery';
+
+export default class App extends Component {
+  state = {};
+  render() {
+    return (
+      <div>
+        <Gallery />
+      </div>
+    );
+  }
 }
-
-export default App;
