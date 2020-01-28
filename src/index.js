@@ -1,6 +1,11 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import user from "./user.json";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './component/App';
+import { BrowserRouter, Route } from 'react-router-dom';
 
-import App from "./components/App";
-ReactDOM.render(<App user={user} />, document.getElementById("root"));
+ReactDOM.render(
+  <BrowserRouter>
+    <Route component={App} />
+  </BrowserRouter>,
+  document.getElementById('root'),
+);
