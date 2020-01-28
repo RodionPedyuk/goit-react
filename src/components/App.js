@@ -1,27 +1,20 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { increment, decrement } from '../redux/actions';
+import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { useRouter } from '../router';
+import app from '../base';
 
-class App extends Component {
-  render() {
-    const { count, changeIncrement, changeDecrement } = this.props;
-    return (
-      <>
-        <button onClick={() => changeIncrement(1)}>Increase</button>
-        <h2>{count}</h2>
-        <button onClick={() => changeDecrement(1)}>Decrease</button>
-      </>
-    );
-  }
-}
+const App = () => {
+  const [auth, setAuth] = useState(null);
+  useEffect(() => {
+    app.auth().onAuthStateChanged(setAuth);
+  });
+  console.log(auth);
+  const routing = useRouter(auth);
+  return (
+    <>
+      <Router>{routing}</Router>
+    </>
+  );
+};
 
-const mapStateToProps = state => ({
-  count: state.counter,
-});
-
-const mapDispatchToProps = dispatch => ({
-  changeIncrement: value => dispatch(increment(value)),
-  changeDecrement: value => dispatch(decrement(value)),
-});
-
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default App;
